@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="{$smarty.const.__MODULE__}/Sign/sign" method="post" enctype="multipart/form-data">
+            <input type="text" name="remarks"/>
+            <input type="hidden" name="user_id" value="51"/>
+            <input type="hidden" name="token" value="1cf369faa9b8f1f5845d94025b0528a3"/>
+            <input type="hidden" name="type" value="1"/>
+            
+            <input type="hidden" name="x" value="113.619881"/>
+            <input type="hidden" name="y" value="23.291085"/>
+            <input type="submit" value="提交"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,1564 @@
+[ 2016-04-22T00:13:12+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031002s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.1200s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0320s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014000s ]
+
+[ 2016-04-22T00:13:13+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0340s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.1040s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0240s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:22:47+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:22:47+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:23:58+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:23:58+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:28:39+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:28:40+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:31:56+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:31:57+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:34:31+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:34:31+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T00:35:34+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:35:35+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:37:23+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:37:24+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0210s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:38:02+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:38:03+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:39:46+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0080s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:42:19+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T00:42:20+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:38:52+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0200s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:38:52+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0300s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:40:29+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:40:29+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:42:36+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:42:36+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:45:21+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T01:45:21+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T01:59:28+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T02:04:40+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T02:04:40+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T12:05:42+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.3610s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0520s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2016-04-22T12:05:43+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0080s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0390s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.1460s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0190s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T12:07:41+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T12:07:41+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0220s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0120s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T12:32:32+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T12:32:32+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0100s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T12:59:31+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T12:59:31+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T13:02:39+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:02:40+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:03:48+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:03:49+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0190s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:14:08+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:14:08+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:35:30+08:00 ] 110.64.211.20 /index.php?c=Index&a=picture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-22T13:40:42+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:40:42+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:43:30+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T13:43:31+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T15:40:00+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:40:00+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:56:04+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0070s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:56:04+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0090s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:06:24+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:06:24+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:13:21+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:13:22+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:32:35+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:32:36+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:34:53+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:34:53+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:13:15+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:13:16+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:16:56+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:16:56+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0070s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T17:24:23+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0080s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T17:24:24+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0110s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0070s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T17:27:22+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:27:22+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:35:13+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:35:13+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T17:36:03+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0080s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:36:03+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:36:42+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:36:42+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:37:13+08:00 ] 110.64.211.24 /index.php?c=announce&a=issue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0060s ]
+SQL: INSERT INTO `tb_announce` (`title`,`content`,`user_id`,`create_time`) VALUES ('sdfs','ddf','50','2016-04-22 17:37:13') [ RunTime:0.2190s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic` [ RunTime:0.0800s ]
+SQL: INSERT INTO `tb_announce_pic` (`pic_url`) VALUES ('http://110.64.211.42/Public/Upload/2010.jpg') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0110s ]
+SQL: INSERT INTO `tb_announce_pic_rel` (`announce_id`,`pic_id`) VALUES ('109','137') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T17:39:06+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0210s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 76 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:39:09+08:00 ] 110.64.211.24 /index.php?c=announce&a=read&user_id=50&announce_id=109
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: INSERT INTO `tb_announce_read` (`user_id`,`announce_id`) VALUES ('50','109') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:39:59+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T17:39:59+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-22T17:40:03+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:40:03+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T17:41:20+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T17:41:20+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0080s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T18:13:27+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T18:13:28+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0080s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T18:13:39+08:00 ] 110.64.211.24 /index.php?c=Index&a=picture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T18:13:57+08:00 ] 110.64.211.24 /index.php?c=Index&a=picture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T18:17:50+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T18:17:50+08:00 ] 110.64.211.20 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0070s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T18:18:16+08:00 ] 110.64.211.20 /index.php?c=Index&a=picture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T22:47:38+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0270s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T22:47:39+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0180s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T23:06:05+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T23:06:06+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,p.pic_url,u.user_name from tb_users as u,tb_announce as a,tb_announce_pic as p,tb_announce_pic_rel as r where r.announce_id=a.id and r.pic_id=p.id and u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T23:07:39+08:00 ] 10.12.243.7 /index.php?c=Index&a=picture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\office\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

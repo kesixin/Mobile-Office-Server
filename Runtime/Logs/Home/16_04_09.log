@@ -1,0 +1,345 @@
+[ 2016-04-09T01:09:07+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='user' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=2 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T01:09:24+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='user' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=2 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:45:51+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:46:15+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:46:46+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:51:15+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:51:58+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:56:00+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0070s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:56:32+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0090s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T10:58:56+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0070s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-09T10:59:13+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T11:04:55+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T14:38:37+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0570s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-04-09T14:44:07+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T14:46:28+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T14:47:03+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T14:48:18+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0080s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-09T14:57:41+08:00 ] 110.64.211.20 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='user' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=2 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T15:11:28+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0070s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-09T15:30:32+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-09T15:40:42+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T15:50:19+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-09T15:50:44+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

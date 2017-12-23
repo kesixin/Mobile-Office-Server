@@ -1,0 +1,1056 @@
+[ 2016-04-30T00:46:44+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0050s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T00:46:45+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0070s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0110s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0080s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='181' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='167' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='166' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='165' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='164' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='163' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='162' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='161' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='160' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='159' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='158' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='157' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='156' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='155' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='154' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='153' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='152' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='135' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='134' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='130' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='129' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='128' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='127' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='126' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='125' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='124' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='123' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='122' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='121' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='120' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='119' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='118' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='117' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='116' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T10:15:03+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T10:15:03+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='181' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='167' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='166' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='165' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='164' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='163' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='162' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='161' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='160' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='159' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='158' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='157' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='156' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='155' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='154' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='153' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='152' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='135' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='134' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='130' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='129' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='128' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='127' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='126' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='125' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='124' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='123' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='122' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='121' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='120' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='119' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='118' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='117' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='116' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-30T10:21:57+08:00 ] 110.64.211.24 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0040s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T10:21:58+08:00 ] 110.64.211.24 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0040s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='181' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='167' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='166' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='165' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='164' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='163' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='162' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='161' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='160' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='159' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='158' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='157' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='156' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='155' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='154' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='153' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='152' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='135' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='134' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='130' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='129' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='128' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='127' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='126' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='125' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='124' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='123' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='122' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='121' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='120' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='119' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='118' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='117' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='116' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T12:16:43+08:00 ] 10.12.243.7 /index.php?c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tb_users` WHERE ( user_name='admin' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_user_role` [ RunTime:0.0060s ]
+SQL: select b.role_name,b.level from tb_user_role as a ,tb_role as b where a.role_id=b.id and a.user_id=50 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T12:16:43+08:00 ] 10.12.243.7 /index.php?c=announce&a=see&user_id=50&token=2562bc5a1585da904a8ac89acf213a18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0050s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='181' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+NOTIC: [8] Undefined index: state D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 84 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='167' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='166' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='165' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='164' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='163' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='162' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='161' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='160' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='159' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='158' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='157' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='156' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='155' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='154' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='153' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='152' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='135' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='134' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='130' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='129' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='128' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='127' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='126' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='125' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='124' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='123' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='122' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='121' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='120' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='119' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='118' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='117' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 90 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='116' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-30T15:01:55+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=116
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0250s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0090s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='116' and r.pic_id=p.id [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:05:36+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=116
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0070s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='116' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [2] unlink(): http does not allow unlinking D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 140 行.
+NOTIC: [2] unlink(): http does not allow unlinking D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 140 行.
+NOTIC: [2] unlink(): http does not allow unlinking D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 140 行.
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='116' [ RunTime:0.0330s ]
+SQL: delete a from tb_announce a where a.id='116' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0240s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='116' )  [ RunTime:0.0160s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='116' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:07:27+08:00 ] 127.0.0.1 /index.php/Home/Index/de
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] unlink(): http does not allow unlinking D:\xampp\htdocs\office\Home\Controller\IndexController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013000s ]
+
+[ 2016-04-30T15:07:31+08:00 ] 127.0.0.1 /index.php/Home/Index/de
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] unlink(): http does not allow unlinking D:\xampp\htdocs\office\Home\Controller\IndexController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-30T15:07:52+08:00 ] 127.0.0.1 /index.php/Home/Index/de
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T15:16:31+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0090s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='118' and r.pic_id=p.id [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:17:38+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0070s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='118' and r.pic_id=p.id [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:18:37+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0070s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='118' and r.pic_id=p.id [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:21:41+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0090s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='118' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='118' [ RunTime:0.0020s ]
+SQL: delete a from tb_announce a where a.id='118' [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0100s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='118' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='118' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:22:36+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=117
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0040s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='117' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='117' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='117' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='117' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:22:58+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=119
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='119' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='119' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='119' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='119' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='119' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:41:33+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=120
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0090s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='120' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='120' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='120' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='120' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='120' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:42:18+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0070s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='121' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='121' [ RunTime:0.0020s ]
+SQL: delete a from tb_announce a where a.id='121' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='121' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='121' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:42:24+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=122
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='122' and r.pic_id=p.id [ RunTime:0.0000s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='122' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='122' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='122' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='122' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:43:23+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='123' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='123' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='123' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='123' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='123' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:43:28+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=124
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='124' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='124' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='124' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='124' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='124' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:43:31+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='125' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='125' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='125' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='125' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:43:34+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=126
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='126' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='126' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='126' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='126' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:43:37+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=127
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0070s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='127' and r.pic_id=p.id [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='127' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='127' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='127' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:43:41+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='128' and r.pic_id=p.id [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='128' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='128' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='128' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:43:45+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=129
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='129' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='129' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='129' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='129' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='129' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:43:49+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=130
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='130' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='130' [ RunTime:0.0020s ]
+SQL: delete a from tb_announce a where a.id='130' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='130' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='130' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:45:33+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=134
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='134' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='134' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='134' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='134' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:45:40+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=135
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='135' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='135' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='135' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='135' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:45:52+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=152
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='152' and r.pic_id=p.id [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 138 行.
+SQL: delete a from tb_announce a where a.id='152' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='152' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='152' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:46:04+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=153
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='153' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='153' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='153' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='153' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='153' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:46:22+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=154
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='154' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='154' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='154' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='154' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='154' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:49:46+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=155
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0060s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='155' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='155' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='155' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='155' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='155' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:49:51+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=156
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='156' and r.pic_id=p.id [ RunTime:0.0000s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='156' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='156' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='156' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='156' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:49:56+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='157' and r.pic_id=p.id [ RunTime:0.0000s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='157' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='157' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0100s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='157' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='157' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:50:01+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=158
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='158' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='158' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='158' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='158' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='158' ) [ RunTime:0.0010s ]
+
+[ 2016-04-30T15:50:07+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=159
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='159' and r.pic_id=p.id [ RunTime:0.0000s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='159' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='159' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='159' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='159' ) [ RunTime:0.0000s ]
+
+[ 2016-04-30T15:50:11+08:00 ] 127.0.0.1 /index.php/Home/Announce/delete?user_id=50&token=2562bc5a1585da904a8ac89acf213a18&announce_id=160
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0050s ]
+SQL: select b.level from tb_users as a,tb_role as b,tb_user_role as c where a.token='2562bc5a1585da904a8ac89acf213a18' and a.id='50' and a.id=c.user_id and b.id=c.role_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic p, tb_announce_pic_rel r where r.announce_id='160' and r.pic_id=p.id [ RunTime:0.0010s ]
+SQL: delete r,p from tb_announce_pic_rel r,tb_announce_pic p where p.id=r.pic_id and r.announce_id='160' [ RunTime:0.0010s ]
+SQL: delete a from tb_announce a where a.id='160' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `tb_announce_read` WHERE ( announce_id='160' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `tb_announce_read` WHERE ( announce_id='160' ) [ RunTime:0.0000s ]
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="{$smarty.const.__MODULE__}/Approval/approval" method="post">
+            <input type="radio" value="1" name="state"/>同意
+            <input type="radio" value="2" name="state"/>不同意<br>
+            评论：<input type="text" name="view" />
+            <input type="hidden" name="token" value="69ab755f00875231953814393662aabb"/>
+            <input type="hidden" name="app_id" value="33"/>
+            <input type="hidden" name="user_id" value="49"/>
+            <input type="submit" value="提交"/>
+        </form>
+    </body>
+</html>

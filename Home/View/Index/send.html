@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="{$smarty.const.__CONTROLLER__}/add" method="post" enctype="multipart/form-data">
+            邮箱：<input  type="text" id="mail" name="mail"/>
+            标题：<input  type="text" id="title" name="title"/>
+            内容<input  type="text" id="content" name="content"/>
+            <input class="button" type="submit" value="发送" style="margin: 0 auto;display: block;"/>
+        </form>
+
+    </body>
+</html>

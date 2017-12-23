@@ -1,0 +1,704 @@
+[ 2016-05-22T14:37:01+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0930s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0100s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0060s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0160s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0060s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0450s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2016-05-22T14:37:50+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0330s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0100s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:00:39+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0210s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0060s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:00:49+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0480s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:00:50+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0180s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:01:32+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0110s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0040s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0050s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:01:38+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0280s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0050s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0050s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0060s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:01:38+08:00 ] 110.64.211.24 /index.php?c=announce&a=see
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0110s ]
+SQL: SELECT `token` FROM `tb_users` WHERE ( id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce` [ RunTime:0.0100s ]
+SQL: select a.id,a.title,a.content,a.create_time,u.user_name from tb_users as u,tb_announce as a where u.id=a.user_id ORDER BY a.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_read` [ RunTime:0.0040s ]
+SQL: SELECT `announce_id` FROM `tb_announce_read` WHERE ( user_id='50' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_announce_pic_rel` [ RunTime:0.0040s ]
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='206' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='205' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='204' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='203' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='202' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='201' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='200' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='199' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='198' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='197' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='196' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='195' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='194' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='192' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='191' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='190' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='189' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='188' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='185' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='184' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='183' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='182' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='180' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='179' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='178' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='177' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='176' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='175' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='174' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 102 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='173' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='172' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='171' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='170' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='169' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+SQL: select p.pic_url from tb_announce_pic_rel r,tb_announce_pic p where r.pic_id=p.id and r.announce_id='168' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pic_url D:\xampp\htdocs\office\Home\Controller\AnnounceController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
