@@ -1,11 +1,7 @@
 ## Mobile-Office-server
 
-作者：[阿柯（化名）](https://github.com/kesixin)
+**个人与队友第一个参赛的作品，移动微办公应用，模仿阿里钉钉部分功能，主要有工作签到、公告、审批、会议室4大功能。**
 
-[微办公App](https://github.com/wangcantian/Mobile-Office)的服务器源码（PHP）,源码是由我队友[阿柯](https://github.com/kesixin)开发的
+**宗旨：减少了办公人员的工作流程，将工作效率大大的提高，也实现的办公的无纸化**
 
-## 选取框架：thinkphp
-
-## License
-
-See the [LICENSE](https://github.com/wangcantian/Mobile-Office-server/blob/master/License) file.
+### 本作品用于个人学习、参赛
